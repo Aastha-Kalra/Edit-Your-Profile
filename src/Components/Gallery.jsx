@@ -5,14 +5,14 @@ import "./Mickey.css";
 
 const Gallery = () => {
   const [images, setImages] = useState(Data);
-  const [category , setCategory ] = useState()
+  const [category, setCategory] = useState();
   const filter = (categoriesItem) => {
-    console.log(categoriesItem)
+    console.log(categoriesItem);
     const updatedItem = Data.filter((curItem) => {
       return curItem.Category === categoriesItem;
     });
     setImages(updatedItem);
-    setCategory(categoriesItem)
+    setCategory(categoriesItem);
   };
 
   const [slideNumber, setSlideNumber] = useState(0);
@@ -28,21 +28,17 @@ const Gallery = () => {
     <>
       <div className="bg-indigo-950 h-[100vh] w-screen lg:px-4 md:p-8 xl:p-8 flex md:flex-row columns-3 overflow-hidden flex-col gap-3  text-white main ">
         <div className="flex flex-col bg-indigo-950 md:w-[700px] lg:w-44 w-[374px] xl:h-[100%] 2xl:h-full lg:h-full absolute top-[665px] lg:top-0 lg:relative">
-          <NAVBAR filter={filter}/>
+          <NAVBAR filter={filter} />
         </div>
         <div className="flex absolute md:relative md:top-0 top-[263px]">
           <div className="overflow-y-hidden overflow-x-hidden mic">
             <div className="bg-[#5453A4] lg:w-[440px] px-4 md:px-1 xl:px-4 md:py-4 lg:h-full py-2 xl:w-[600px] xl:h-[100%] w-[343px] md:h-[640px] h-[325px] 2xl:h-full lg:top-0 absolute top-[154px] left-3 md:left-0 md:top-10 md:relative rounded-2xl md:w-[400px] flex md:flex-ro flex-col overflow-y-auto  overflow-x-hidden mic gap-6">
-            <div className="text-xl md:ml-3 ml-0 md:text-3xl">{category}</div>
-            
-              <div className="grid grid-cols-3 w-72 h-24 md:w-[400px] md:gap-1 md:grid-cols-2 lg:w-[400px] xl:w-[550px]   xl:grid-cols-3 xl:gap-y-8 xl:gap-x-5 lg:gap-y-6 gap-6 ">
-          
-                {images.map((elem, index) => {
+              <div className="text-xl md:ml-3 ml-0 md:text-3xl">{category}</div>
 
+              <div className="grid grid-cols-3 w-72 h-24 md:w-[400px] md:gap-1 md:grid-cols-2 lg:w-[400px] xl:w-[550px]   xl:grid-cols-3 xl:gap-y-8 xl:gap-x-5 lg:gap-y-6 gap-6 ">
+                {images.map((elem, index) => {
                   return (
                     <div key={index}>
-
-                  
                       <div
                         className="bg-yellow-400/100 h-[98px] md:h-52 w-[80px] md:w-44 cursor-pointer   rounded-xl"
                         onClick={() => handleImage(index)}
@@ -60,13 +56,13 @@ const Gallery = () => {
                         </div>
                         {/* {console.log(elem.id)} */}
                         {elem.img ? (
-                        <div className=" -mb-3">
+                          <div className=" -mb-3">
                             <img
-                            src={elem.img}
-                            alt=""
-                            className="md:h-36 h-[62px]  justify-cente mix-blend-multiply items-center  "
-                          />
-                        </div>
+                              src={elem.img}
+                              alt=""
+                              className="md:h-36 h-[62px]  justify-cente mix-blend-multiply items-center  "
+                            />
+                          </div>
                         ) : (
                           ""
                         )}
@@ -106,17 +102,18 @@ const Gallery = () => {
                       alt=""
                     />
                     {images[slideNumber].star ? (
-                     <div className=" md:h-32 h-12 w-12 md:w-36 absolute md:right-1 md:relative lg:absolute lg:-right-12 xl:right-0 right-9 top-3">
-                       <img
-                        className="md:w-28 md:h-32 w-14 h-14 mix-blend-multiply absolute xl:right-0"
-                        src={images[slideNumber].star}
-                        alt=""
-                      />
-                     </div>
+                      <div className=" md:h-32 h-12 w-12 md:w-36 absolute md:right-1 md:relative lg:absolute lg:-right-12 xl:right-0 right-9 top-3">
+                        <img
+                          className="md:w-28 md:h-32 w-14 h-14 mix-blend-multiply absolute xl:right-0"
+                          src={images[slideNumber].star}
+                          alt="star"
+                        />
+                      </div>
                     ) : (
                       <img
                         src=""
                         className="w-32  bg-pink-50 h-32 mix-blend-multiply hidden"
+                        alt="mickey"
                       />
                     )}
                   </div>

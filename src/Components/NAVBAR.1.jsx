@@ -1,27 +1,20 @@
 import React, { useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
-const NAVBAR = ({ filter }) => {
+export const NAVBAR = ({ filter }) => {
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
 
   function active() {
-    setActive1(true);
-    setActive2(false);
-    setActive3(false);
+    return setActive1(true), setActive2(false), setActive3(false);
   }
 
   function activeTwo() {
-    setActive1(false);
-    setActive2(true);
-    setActive3(false);
+    return setActive1(false), setActive2(true), setActive3(false);
   }
-
   function activeThree() {
-    setActive1(false);
-    setActive2(false);
-    setActive3(true);
+    return setActive1(false), setActive2(false), setActive3(true);
   }
 
   return (
@@ -104,5 +97,3 @@ const NAVBAR = ({ filter }) => {
     </>
   );
 };
-
-export default NAVBAR;
