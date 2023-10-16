@@ -1,0 +1,122 @@
+.svg{
+    filter: drop-shadow(0 -5px #1f1f2c);
+    border-radius: 12px;
+  
+}
+.mic::-webkit-scrollbar{
+    width: 10px;    
+}
+.mic::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: rgb(149, 142, 168);   
+}
+.mic::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(18, 53, 85);
+
+    
+ 
+    
+}
+.active{
+    background-color: rgb(39, 204, 204);
+}
+
+@media (max-width:767px){
+    
+.card{
+    background-color:#7b7baa;
+    width:31em;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icon{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(30 27 75);
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 85px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: -21px;
+}
+.icon::before{
+   
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: -141.3%;
+    width: 139%;
+    height: 20px;
+    background-color: transparent;
+    border-top-right-radius: 90%;
+    box-shadow: 1px -16px 1px 1px #5453A4;
+   
+}
+.icon::after{
+    content: '';
+    position: absolute;
+    top: 22px;
+    right: -139.3%;
+    width: 139.5%;
+    height: 20px;
+    background-color: transparent;
+    border-top-left-radius: 90%;
+    box-shadow: 1px -16px 1px 1px #5453A4;
+   
+}
+
+
+}
+
+@media (min-width:400px)
+
+{
+    .main{
+        padding-left: 27px;
+}
+.end{
+    margin-left: 10px;
+}
+ }
+@media (min-width:350px){
+    .end{
+        margin-left: 11px;
+    }
+}
+   
+@media (min-width:480px) and (max-width:530px) {
+    .main{
+        padding-left: 70px;
+    }
+    
+}
+@media (min-width:530px) and (max-width:600px) {
+    .main{
+        padding-left: 90px;
+    }
+    
+}
+@media (min-width:600px) and (max-width:670px) {
+    .main{
+        padding-left: 120px;
+    }
+    
+}
+@media (min-width:671px) and (max-width:720px) {
+    .main{
+        padding-left: 150px;
+    }
+    
+}
+@media (min-width:720px) and (max-width:767px) {
+    .main{
+        padding-left: 170px;
+    }
+    
+}
