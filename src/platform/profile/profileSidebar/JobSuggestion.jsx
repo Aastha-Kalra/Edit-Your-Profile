@@ -1,6 +1,5 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const JobSuggestion = () => {

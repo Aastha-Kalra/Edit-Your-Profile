@@ -1,6 +1,6 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 
-import {AiFillBell, AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {AiOutlineBell} from 'react-icons/ai'
 import {PiHandbagLight} from 'react-icons/pi'
