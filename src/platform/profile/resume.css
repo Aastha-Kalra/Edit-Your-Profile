@@ -1,0 +1,14 @@
+.mic::-webkit-scrollbar{
+    width: 10px;    
+}
+.mic::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: rgb(159, 147, 190);   
+}
+.mic::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(20, 78, 135);   
+}
+iframe{
+  display: block;
+}
