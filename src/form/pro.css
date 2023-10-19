@@ -3,12 +3,12 @@
 }
 .mic::-webkit-scrollbar-track{
   border-radius: 10px;
-  background-color: rgb(159, 147, 190);   
+  background-color: rgb(149, 142, 168);   
 }
 .mic::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    background-color: rgb(20, 78, 135);   
+    background-color: rgb(18, 53, 85);   
 }
-iframe{
-  display: block;
-}
+/* .bg{
+  background-color: rgb(49, 49, 97);
+} */
