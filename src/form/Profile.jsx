@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const Profile = () => {
-  const defaultImage = "https://canfixit.ca/wp-content/uploads/2020/06/testi-3.jpg"
-  const defaultCover= "https://thumbs.dreamstime.com/b/childhood-memories-15935918.jpg"
-  const [selectedImage, setSelectedImage] = useState( defaultImage
-  );
-  const [selectedCover, setSelectedCover] = useState(defaultCover
-  );
+  const defaultImage =
+    "https://canfixit.ca/wp-content/uploads/2020/06/testi-3.jpg";
+  const defaultCover =
+    "https://thumbs.dreamstime.com/b/childhood-memories-15935918.jpg";
+  const [selectedImage, setSelectedImage] = useState(defaultImage);
+  const [selectedCover, setSelectedCover] = useState(defaultCover);
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -58,7 +58,6 @@ const Profile = () => {
             </div>
           </div>
 
-
           <div className="-mt-44  absolute right-5">
             <input
               className="hidden"
@@ -76,11 +75,7 @@ const Profile = () => {
               </span>
             </label>
           </div>
-          
         </div>
-
-
-        
       </div>
     </>
   );
